@@ -1,2 +1,1 @@
-NewsMania
 NewsMania is a news media application carefully designed to meet your information needs. NewsMania keeps you up to date with the latest and most relevant news, from the latest developments in technology, politics, business and sports to countless other topics. Whether you want to learn about global events, finance, innovation or the latest sports and culture, NewsMania provides comprehensive, reliable information on up-to-date information. Enjoy the convenience of being ahead o f the pack with NewsMania, your trusted companion for navigating today's complex world
