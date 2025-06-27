@@ -1,5 +1,3 @@
-
-
 const darkModeToggle = document.getElementById("darkModeToggle");
 const body = document.body;
 document.getElementById("footerText").innerHTML = `Copyright &copy;${new Date().getFullYear()} &nbsp; Nidhi Chaukiyal`;
@@ -167,6 +165,26 @@ searchButton.addEventListener("click",()=>{
   fetchNews(query);
 
 })
+
+
+async function getBotResponse(userMessage) {
+  const response = await fetch("https://api.openai.com/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `5e79be94af9249a28ccf1154ea7250a7`,
+    },
+    body: JSON.stringify({
+      model: "gpt-3.5-turbo",
+      messages: [{ role: "user", content: userMessage }],
+    }),
+  });
+
+  const data = await response.json();
+  const botReply = data.choices[0].message.content;
+  appendMessage("bot", botReply);
+}
+
 
 
 
